@@ -13,14 +13,12 @@
     "ios": "7.0"
   },
   "source": {
-    "http": "https://cdn.wilddog.com/ios/client/auth/WilddogAuth.framework-2.0.0Beta.zip"
+    "http": "https://cdn.wilddog.com/sdk/ios/2.0.0/WilddogAuth.framework-2.0.0.zip"
   },
   "vendored_frameworks": [
     "WilddogAuth.framework"
   ],
-  "preserve_paths": [
-    "WilddogAuth.framework/WilddogAuth"
-  ],
+  "public_header_files": "WilddogAuth.framework/Headers/*.h",
   "requires_arc": true,
   "xcconfig": {
     "OTHER_LDFLAGS": "-ObjC"

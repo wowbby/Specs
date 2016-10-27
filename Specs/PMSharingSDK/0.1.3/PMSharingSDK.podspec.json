@@ -2,6 +2,7 @@
   "name": "PMSharingSDK",
   "version": "0.1.3",
   "summary": "PMSharingSDK - best sharing SDK ever.",
+  "cocoapods_version": ">= 1.0.0",
   "description": "PMSharingSDK - best sharing SDK ever, seriosly.",
   "homepage": "https://github.com/Westbro0k/PMSharingSDK",
   "license": {
@@ -18,10 +19,27 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "PMSharingSDK/Classes/**/*",
-  "resource_bundles": {
-    "PMSharingSDK": [
-      "PMSharingSDK/Assets/*{.png, .xib, .json, .xcassets, .lproj}"
+  "requires_arc": true,
+  "resources": [
+    "PMSharingSDK/**/*.storyboard",
+    "PMSharingSDK/**/*.xib",
+    "PMSharingSDK/Localization/*.lproj",
+    "PMSharingSDK/**/*.xcassets"
+  ],
+  "preserve_paths": "PMSharingSDK/Frameworks/PMSDK.framework",
+  "ios": {
+    "vendored_frameworks": "PMSharingSDK/Frameworks/PMSDK.framework"
+  },
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "dependencies": {
+    "GoogleAnalytics": [
+      "3.14.0"
     ]
-  }
+  },
+  "frameworks": [
+    "WebKit",
+    "SafariServices"
+  ]
 }

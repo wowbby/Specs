@@ -19,7 +19,7 @@
   "requires_arc": true,
   "dependencies": {
     "CHCubicBezier": [
-
+      "~> 1.0"
     ]
   }
 }

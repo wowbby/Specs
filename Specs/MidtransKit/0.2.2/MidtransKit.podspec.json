@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "MidtransCoreKit": [
-
+      "~> 0.2.2"
     ]
   }
 }
